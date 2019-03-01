@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bank.BussinessLogic;
+using Bank.BusinessLogic;
 using Bank.Models.Concretes;
 
-namespace BankAppFormTest
+namespace BankAppForm
 {
     public partial class Form1 : Form
     {
@@ -26,7 +20,7 @@ namespace BankAppFormTest
         {
             try
             {
-                using (var customerbussiness = new CustomersBussiness())
+                using (var customerbussiness = new CustomersBusiness())
                 {
                     var c = new Customers();
                     c.CustomerName = txt_Cname.Text;
@@ -53,7 +47,7 @@ namespace BankAppFormTest
         {
             try
             {
-                using (var customerbussiness = new CustomersBussiness())
+                using (var customerbussiness = new CustomersBusiness())
                 {
                     dataGrid_Customer.DataSource = customerbussiness.SelectAllCustomers().ToList();
                 }
@@ -77,7 +71,7 @@ namespace BankAppFormTest
                 transaction.TransactionDate = DateTime.Now;
                 transaction.isSuccess = true;
 
-                using (var transactionbussines = new TransactionBussines())
+                using (var transactionbussines = new TransactionBusiness())
                 {
                     success = transactionbussines.MakeTransaction(transaction, senderCustomer, recieverCustomer);
                 }
@@ -97,7 +91,7 @@ namespace BankAppFormTest
         {
             try
             {
-                using (var customerbussiness = new CustomersBussiness())
+                using (var customerbussiness = new CustomersBusiness())
                 {
                     senderCustomer = customerbussiness.SelectCustomerById(int.Parse(txt_Sender_ID.Text));
                     lbl_sendername.Text = senderCustomer.CustomerName;
@@ -117,7 +111,7 @@ namespace BankAppFormTest
         {
             try
             {
-                using (var customerbussiness = new CustomersBussiness())
+                using (var customerbussiness = new CustomersBusiness())
                 {
                     recieverCustomer = customerbussiness.SelectCustomerById(int.Parse(txt_Reciever_ID.Text));
                     lbl_recievername.Text = recieverCustomer.CustomerName;
@@ -137,7 +131,7 @@ namespace BankAppFormTest
         {
             try
             {
-                using (var transactionBussiness = new TransactionBussines())
+                using (var transactionBussiness = new TransactionBusiness())
                 {                 dataGrid_Transactions.DataSource = transactionBussiness.SelectAllTransactions().ToList();
                 }
             }

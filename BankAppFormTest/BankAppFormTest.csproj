@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5FF96DCD-9674-403D-80E2-6C2376B30239}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BankAppFormTest</RootNamespace>
-    <AssemblyName>BankAppFormTest</AssemblyName>
+    <RootNamespace>BankAppForm</RootNamespace>
+    <AssemblyName>BankAppForm</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,17 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bank.BussinesLogic">
-      <HintPath>..\Bank.BussinesLogic\bin\Debug\Bank.BussinesLogic.dll</HintPath>
+    <Reference Include="Bank.BusinessLogic">
+      <HintPath>..\..\BankApp\Bank.BusinessLogic\bin\Debug\Bank.BusinessLogic.dll</HintPath>
     </Reference>
     <Reference Include="Bank.Commons">
-      <HintPath>..\Bank.BussinesLogic\bin\Debug\Bank.Commons.dll</HintPath>
-    </Reference>
-    <Reference Include="Bank.DataAccess">
-      <HintPath>..\Bank.BussinesLogic\bin\Debug\Bank.DataAccess.dll</HintPath>
+      <HintPath>..\..\BankApp\Bank.BusinessLogic\bin\Debug\Bank.Commons.dll</HintPath>
     </Reference>
     <Reference Include="Bank.Models">
-      <HintPath>..\Bank.BussinesLogic\bin\Debug\Bank.Models.dll</HintPath>
+      <HintPath>..\..\BankApp\Bank.BusinessLogic\bin\Debug\Bank.Models.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -77,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,4 +1,4 @@
-﻿namespace BankAppFormTest
+﻿namespace BankAppForm
 {
     partial class Form1
     {
