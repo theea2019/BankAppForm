@@ -66,6 +66,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.dataGrid_Transactions = new System.Windows.Forms.DataGridView();
             this.btn_transactionList = new System.Windows.Forms.Button();
+            this.btn_withdraw = new System.Windows.Forms.Button();
+            this.btn_deposit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Customer)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -410,11 +412,33 @@
             this.btn_transactionList.UseVisualStyleBackColor = true;
             this.btn_transactionList.Click += new System.EventHandler(this.btn_transactionList_Click);
             // 
+            // btn_withdraw
+            // 
+            this.btn_withdraw.Location = new System.Drawing.Point(495, 366);
+            this.btn_withdraw.Name = "btn_withdraw";
+            this.btn_withdraw.Size = new System.Drawing.Size(131, 27);
+            this.btn_withdraw.TabIndex = 13;
+            this.btn_withdraw.Text = "Withdraw";
+            this.btn_withdraw.UseVisualStyleBackColor = true;
+            this.btn_withdraw.Click += new System.EventHandler(this.btn_withdraw_Click);
+            // 
+            // btn_deposit
+            // 
+            this.btn_deposit.Location = new System.Drawing.Point(495, 333);
+            this.btn_deposit.Name = "btn_deposit";
+            this.btn_deposit.Size = new System.Drawing.Size(131, 27);
+            this.btn_deposit.TabIndex = 14;
+            this.btn_deposit.Text = "Deposit";
+            this.btn_deposit.UseVisualStyleBackColor = true;
+            this.btn_deposit.Click += new System.EventHandler(this.btn_deposit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 671);
+            this.Controls.Add(this.btn_deposit);
+            this.Controls.Add(this.btn_withdraw);
             this.Controls.Add(this.btn_transactionList);
             this.Controls.Add(this.dataGrid_Transactions);
             this.Controls.Add(this.label19);
@@ -490,6 +514,8 @@
         private System.Windows.Forms.Label lbl_recievername;
         private System.Windows.Forms.DataGridView dataGrid_Transactions;
         private System.Windows.Forms.Button btn_transactionList;
+        private System.Windows.Forms.Button btn_withdraw;
+        private System.Windows.Forms.Button btn_deposit;
     }
 }
 
