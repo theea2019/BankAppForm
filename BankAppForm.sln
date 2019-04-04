@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppForm.Soap", "BankApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppForm.Pure", "BankAppForm.Pure\BankAppForm.Pure.csproj", "{F4D4008B-A7A8-42FF-AB11-DB28465C1B16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppForm.RestApi", "BankAppForm.RestApi\BankAppForm.RestApi.csproj", "{87A8E271-1740-4F5C-B6B3-B0F6A5BE39C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F4D4008B-A7A8-42FF-AB11-DB28465C1B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4D4008B-A7A8-42FF-AB11-DB28465C1B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4D4008B-A7A8-42FF-AB11-DB28465C1B16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A8E271-1740-4F5C-B6B3-B0F6A5BE39C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A8E271-1740-4F5C-B6B3-B0F6A5BE39C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A8E271-1740-4F5C-B6B3-B0F6A5BE39C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A8E271-1740-4F5C-B6B3-B0F6A5BE39C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
